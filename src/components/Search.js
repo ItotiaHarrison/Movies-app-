@@ -10,7 +10,11 @@ function Search(props) {
     const callSearchFunction = (e) => {
         e.preventDefault();
         props.search(searchValue);
-        setSearchValue('');
+        resetInputField();
+    }
+
+    const resetInputField = () => {
+        setSearchValue('')
     }
 
     return (
